@@ -1,0 +1,101 @@
+ul {
+	padding-inline-start: 0px;
+}
+body {
+	background-color: gray;
+}
+.menu a{
+	text-decoration: none;
+}
+.menu li {
+list-style: none;
+position:relative;
+/* padding-right: 20px; */
+}
+.menu__list {
+	display: flex;
+	gap: 10px;
+}
+.menu__list>li:hover .sub-menu__List{
+display: block;
+}
+.menu__link {
+	color: white;
+}
+.sub-menu__List {
+	display: none;
+	position: absolute;
+	left: 0px;
+	top: 15px;
+	padding: 20px 0px 0px 0px;
+	min-width: 150px;
+}
+.sub-menu__List>li {
+	background-color: #fff;
+}
+.sub-menu__link {
+	color: black;
+	display: inline-block;
+	padding: 5px 10px;
+}
+
+.sub-sub-menu__List {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	min-width: 150px;
+	padding: 0px 0px 0px 5px;
+}
+.sub-sub-menu__List>li {
+	background-color: black;
+}
+.sub-menu__List>li:hover .sub-sub-menu__List {
+	display: block;
+}
+.sub-sub-menu__link {
+	color: white;
+	display: inline-block;
+	padding: 5px 10px;
+}
+.menu__arrow {
+	display: none;
+	position: absolute;
+	top: 4px;
+	right: 0;
+	width: 0;
+	height: 0;
+	border-top: 8px solid #fff;
+	border-right: 8px solid transparent;
+	border-left: 8px solid transparent;
+}
+.sub-menu__arrow {
+	display: none;
+	border-top: 8px solid black;
+	border-right: 8px solid transparent;
+	border-left: 8px solid transparent;
+	position: absolute;
+	top: 10px;
+ 	right: 8px;
+	width: 0;
+}
+
+.menu__arrow {
+
+}
+@media screen and
+(min-device-width: 1px) and
+(max-device-width: 900px){
+	body {
+		
+	}
+	.menu__arrow {
+		display: block;
+	}
+	.menu li {
+		padding-right: 20px;
+	}
+	.sub-menu__arrow {
+		display: block;
+	}
+}
