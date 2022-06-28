@@ -36,7 +36,7 @@ display: block;
 .sub-menu__link {
 	color: black;
 	display: inline-block;
-	padding: 5px 10px;
+	padding: 5px 5px;
 }
 
 .sub-sub-menu__List {
@@ -80,21 +80,19 @@ display: block;
 	width: 0;
 }
 
-.menu__arrow {
 
-}
 @media screen and
 (min-device-width: 1px) and
 (max-device-width: 900px){
-	body {
-		
-	}
+	
 	.menu__arrow {
 		display: block;
 	}
+	
 	.menu li {
 		padding-right: 20px;
 	}
+	
 	.sub-menu__arrow {
 		display: block;
 	}
